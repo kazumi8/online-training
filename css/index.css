@@ -1,12 +1,140 @@
+/* текст */
+.main-title {  
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+}
+
+.title-regular { 
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.title-bold {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.text-bold-large {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.text-bold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.text-regular {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.text-small {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+
 body {
     background-color: #F3F3F3;
+    color: #2B3541;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
 }
 
 .header {
     display: flex;
+}
+
+.header__link-logo-img {
+    margin-left: 50px;
+    margin-right: 235px;
+}
+
+.nav {
+    display: flex;
     justify-content: space-between;
 }
 
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
 
+.nav__list-item {
+    padding-left: 15px;
+}
+
+.nav__list-link {
+    text-decoration: none;
+    color: #2B3541;
+    transition: 2s;
+    padding-bottom: 10px;
+}
+
+.nav__list-link:hover {
+    border-bottom: 1px solid #2B3541; 
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.special-offer__title {
+    margin-top: 250px;
+    text-transform: uppercase;
+
+}
+
+.special-offer {
+    margin-left: 390px;
+   padding-top: 250px;
+    background-image: url("../@1x/Image\ 1\ screen.png");
+    background-repeat: no-repeat;
+    background-position: 331px 13px;
+    width: 1325px;
+    height: 852px;
+}
+
+.special-offer__title {
+    margin: 0;
+    width: 675px;
+}
+
+.special-offer__description {
+    margin: 0;
+    margin-bottom: 40px;
+    padding-left: 80px;
+    width: 297px;
+}
+
+.special-offer__link {
+    margin-left: 80px;
+    padding: 20px 30px 20px 30px;
+    height: 64px;
+    width: 252px;
+    color: #2B3541;
+    background-color: #FBF138;
+    text-decoration: none;
+}
+
+.special-offer__link:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+}
