@@ -27,7 +27,7 @@
 .text-bold {
     font-size: 18px;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 27px;
 }
 
 .text-regular {
@@ -53,6 +53,13 @@ body {
     font-family: Montserrat, sans-serif;
     font-size: 18px;
 }
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
 
 .header {
     display: flex;
@@ -96,25 +103,26 @@ body {
     list-style: none;
 }
 
-.special-offer__title {
-    margin-top: 250px;
-    text-transform: uppercase;
 
-}
+
+/* block special-offer */
 
 .special-offer {
     margin-left: 390px;
-   padding-top: 250px;
+    margin-bottom: 163px;
+    padding-top: 250px;
     background-image: url("../@1x/Image\ 1\ screen.png");
     background-repeat: no-repeat;
     background-position: 331px 13px;
     width: 1325px;
-    height: 852px;
+    height: 652px;
 }
 
 .special-offer__title {
     margin: 0;
     width: 675px;
+    margin-top: 250px;
+    text-transform: uppercase;
 }
 
 .special-offer__description {
@@ -137,4 +145,68 @@ body {
 .special-offer__link:hover {
     color: #FBF138;
     background-color: #2B3541;
+}
+
+/* block events */
+
+.events__title {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.events__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+}
+
+.events__list-item {
+    height: 600px;
+    width: 367px;
+    background: linear-gradient(to top, #FBF138, #FDF9B6);
+}
+
+.events__list-item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.events__list-item--marathon {
+    background-image: linear-gradient(to bottom, rgba(251, 241, 56, .3),
+                     rgba(253, 249, 182, .0)), url("../@1x/maraphon.png");
+    background-repeat: no-repeat;
+
+}
+
+.events__list-item--coaching {
+    background-image: linear-gradient(to bottom, rgba(251, 241, 56, .3),
+                    rgba(253, 249, 182, .0)), url("../@1x/Vebinar\ 1.png");
+    background-repeat: no-repeat;
+}
+
+.events__list-item--yoga {
+   background-image:  linear-gradient(to bottom, rgba(251, 241, 56, .3),
+                     rgba(253, 249, 182, .0)), url("../@1x/Vebinar\ 2.png");
+   background-repeat: no-repeat;
+}
+
+.events__list-time {
+    margin: 20px 0 0 20px;
+}
+
+.events__list-title {
+    margin: 0;
+    margin:77px 0 0 30px;
+}
+
+.events__list-text {
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    height: 47px;
+    width: 122px;
+    color: #2B3541;
+    background-color: #FBF138;
+    text-align: center;
+ 
 }
