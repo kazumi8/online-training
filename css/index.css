@@ -108,20 +108,22 @@ body {
 /* block special-offer */
 
 .special-offer {
-    margin-left: 390px;
-    margin-bottom: 163px;
+    max-width: 1325px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-bottom: 164px;
     padding-top: 250px;
     background-image: url("../@1x/Image\ 1\ screen.png");
     background-repeat: no-repeat;
     background-position: 331px 13px;
-    width: 1325px;
-    height: 652px;
+    height: 615px;
 }
 
 .special-offer__title {
     margin: 0;
     width: 675px;
-    margin-top: 250px;
     text-transform: uppercase;
 }
 
@@ -147,6 +149,10 @@ body {
     background-color: #2B3541;
 }
 
+
+
+
+
 /* block events */
 
 .events__title {
@@ -165,7 +171,7 @@ body {
 .events__list-item {
     height: 600px;
     width: 367px;
-    background: linear-gradient(to top, #FBF138, #FDF9B6);
+
 }
 
 .events__list-item:not(:first-child) {
@@ -202,11 +208,99 @@ body {
 
 .events__list-text {
     margin: 0;
-    padding: 10px 20px 10px 20px;
     height: 47px;
     width: 122px;
     color: #2B3541;
     background-color: #FBF138;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
  
+}
+
+
+
+
+/* block schedule */
+
+.schedule__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule__title {
+    margin: 0;
+}
+
+.schedule__list {
+  
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px 20px;
+}
+
+
+.schedule__list-item {
+    border: 1px solid rgba(43, 53, 65, .5);
+    box-sizing: border-box;
+    width: 367px;
+    height: 250px;
+}
+
+.schedule__list-date {
+ 
+}
+
+.schedule__list-title {
+    margin: 0;
+    position: relative;
+
+}
+
+.schedule__list-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.schedule__list-title--functional::before {
+    width: 65px;
+    height: 65px;
+    background-image: url("../icons/body.svg");
+}
+
+.schedule__list-title--sculpt::before {
+    width: 42px;
+    height: 85px;
+    background-image: url("../icons/bottle.svg");
+ 
+}
+
+.schedule__list-title--lab::before {
+    width: 91px;
+    height: 50px;
+    background-image: url("../icons/dumbbell.svg");
+}
+
+.schedule__list-title--power::before {
+    width: 67px;
+    height: 107px;
+    background-image: url("../icons/jump.svg");
+}
+
+.schedule__list-title--breath::before {
+    width: 65px;
+    height: 61px;
+    background-image: url("../icons/heart.svg");
+}
+
+.schedule__list-title--warm-up::before {
+    width: 58px;
+    height: 66px;
+    background-image: url("../icons/weight.svg");
 }
