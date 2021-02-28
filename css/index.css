@@ -164,18 +164,14 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px;
+    grid-gap: 20px;
 }
 
 .events__list-item {
-    height: 600px;
-    width: 367px;
-
-}
-
-.events__list-item:not(:first-child) {
-    margin-left: 20px;
+    display: grid;
 }
 
 .events__list-item--marathon {
@@ -216,7 +212,7 @@ body {
     align-items: center;
     justify-content: center;
     justify-self: end;
- 
+    align-self: end;
 }
 
 
