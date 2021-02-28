@@ -58,7 +58,7 @@
           Узнать подробнее
         </a>
       </section>
-      <div class="container__wrapper wrapper">
+      <div class="container__main-wrapper main-wrapper">
         <section class="container__events events">
           <h2 class="title-bold events__title">
             Ближайшие события
@@ -102,7 +102,7 @@
         <section class="container__schedule schedule">
           <div class="schedule__wrapper">
             <h2 class="title-bold schedule__title">
-              Расписание тренировок
+              Расписание <span  class="schedule__title-span">тренировок</span>
             </h2>
             <time class="text-bold-large schedule__date" datetime="2021-06-22 - 2021-06-28">
               22 - 28 июня
@@ -159,6 +159,81 @@
             </div>
           </div>
         </section>
+      </div>
+      <div class="container__email-wrapper email-wrapper"> 
+        <section class="container__mailing mailing">
+          <h2 class="title-bold mailing__title">
+            Подпишитесь на рассылку
+          </h2>
+          <svg class="mailing__svg-circle" width="53" height="53" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+             <circle cx="50.5" cy="37.5" r="26.5" fill="#FBF138"/>
+            </g>
+          </svg>
+          <form class="mailing__form">
+          <input  class="text-regular mailing__form-input" id="email" type="text" placeholder="Ваш e-mail">
+          <button class="text-small mailing__form-button" type="submit">
+            Подписаться
+          </button>
+          <p class="mailing__form-description">
+            <input  class="mailing__form-checkbox" type="checkbox" name="email" value="a1">
+            Согласен с обработкой 
+            <a href="#" class="mailing__form-link">
+              персональных данных 
+            </a>
+          </p>
+          </form>
+        </section>
+      </div>
+      <div class="container__main-wrapper main-wrapper">
+      <section class="container__company-info company-info">
+        <h2 class="company-info__title">
+          О компании
+        </h2>
+        <p class="company-info__description">
+          Наша компания является одной из немногих, кто предлагает
+           фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите,
+            что мы проводим не только онлайн-тренировки.
+        </p>
+        <button class="company-info__button">
+          Записаться
+        </button>
+        <img class="company-info__img" src="./@1x/trainer.png" alt="Фото тренера">
+        <ul class="company-info__list">
+          <li class="company-info__list-item">
+            <h3 class="company-info__list-title">
+              Экономия времени 
+            </h3>
+            <p class="company-info__list-text">
+              Не нужно тратить время на дорогу
+            </p>
+          </li>
+          <li class="company-info__list-item">
+            <h3 class="company-info__list-title">
+              Индивидуальный подход
+            </h3>
+            <p class="company-info__list-text">
+              Внимание тренера пренадлежит только вам
+            </p>
+          </li>
+          <li class="company-info__list-item">
+            <h3 class="company-info__list-title">
+              Экономия денег
+            </h3>
+            <p class="company-info__list-text">
+              Средняя цена одной тренировки - 700₽
+            </p>
+          </li>
+          <li class="company-info__list-item">
+            <h3 class="company-info__list-title">
+              Опытный персонал
+            </h3>
+            <p class="company-info__list-text">
+              Стаж работы у наших тренеров от 5 лет
+            </p>
+          </li>
+        </ul>
+      </section>
       </div>
     </main>
 </body>
