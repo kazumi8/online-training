@@ -1,114 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online training</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online training</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <header class="header">
-      <a class="header__link-logo" href="#">
-        <img class="header__link-logo-img" src="./icons/logo.svg" alt="Логотип">
+  <header class="header">
+    <a class="header__link-logo" href="#">
+      <img class="header__link-logo-img" src="./icons/logo.svg" alt="Логотип">
+    </a>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a class="text-regular nav__list-link" href="#">
+            Мероприятия
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a class="text-regular nav__list-link" href="#">
+            Расписание
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a class="text-regular nav__list-link" href="#">
+            О компании
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__list">
+      <li class="header__list-item">
+        <a class="header__list-link" href="#">
+          <img class="header__list-img" src="./icons/IN.svg" alt="Instagram">
+        </a>
+      </li>
+      <li class="header__list-item">
+        <a class="header__list-link" href="#">
+          <img class="header__list-img" src="./icons/FB.svg" alt="Facebook">
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main class="container">
+    <section class="container__special-offer special-offer">
+      <h1 class="main-title special-offer__title">
+        Онлайн тренировки любой сложности
+      </h1>
+      <p class="title-regular special-offer__text">
+        &gt; 15 тренировок
+      </p>
+      <p class="text-regular special-offer__description">
+        в области спортивной физиологии и нутрициологии
+      </p>
+      <a class="text-small special-offer__link" href="#">
+        Узнать подробнее
       </a>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="text-regular nav__list-link" href="#">
-              Мероприятия
-            </a>
+      <a class="special-offer__arrow-link" href="#">
+        <svg class="special-offer__arrow-img" width="52" height="55" viewBox="0 0 52 55" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path
+              d="M18.0308 22.3904L26.1024 30.5963L34.174 22.3904L36.6536 24.9167L26.1024 35.6667L15.5513 24.9167L18.0308 22.3904Z"
+              fill="#2B3541" />
+            <g filter="url(#filter0_d)">
+              <path
+                d="M50.5 28.5C50.5 42.3342 39.5042 53.5 26 53.5C12.4958 53.5 1.5 42.3342 1.5 28.5C1.5 14.6658 12.4958 3.5 26 3.5C39.5042 3.5 50.5 14.6658 50.5 28.5Z"
+                stroke="#2B3541" stroke-width="3" />
+            </g>
+          </g>
+          <defs>
+            <filter id="filter0_d" x="-24" y="-9" width="100" height="101" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+              <feOffset dy="13" />
+              <feGaussianBlur stdDeviation="12" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.984314 0 0 0 0 0.945098 0 0 0 0 0.219608 0 0 0 0.3 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+            </filter>
+            <clipPath id="clip0">
+              <rect width="52" height="55" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </section>
+    <div class="container__main-wrapper main-wrapper">
+      <section class="container__events events">
+        <h2 class="title-bold events__title">
+          Ближайшие события
+        </h2>
+        <ul class="events__list">
+          <li class="events__list-item events__list-item--marathon">
+            <time class="text-bold events__list-time" datetime="2021-06-29 - 2021-07-04">
+              29.06 - 4.07
+            </time>
+            <h3 class="text-bold-large events__list-title">
+              Марафон выносливости
+            </h3>
+            <p class="text-regular events__list-text">
+              марафон
+            </p>
+            <button class="text-small events__list-button">
+              Учавствовать
+            </button>
           </li>
-          <li class="nav__list-item">
-            <a class="text-regular nav__list-link" href="#">
-              Расписание
-            </a>
+          <li class="events__list-item events__list-item--coaching">
+            <time class="text-bold events__list-time" datetime="2021-07-09">
+              9.07
+            </time>
+            <h3 class="text-bold-large events__list-title">
+              Как стать тренером?
+            </h3>
+            <p class="text-regular events__list-text">
+              вебинар
+            </p>
+            <button class="text-small events__list-button">
+              Учавствовать
+            </button>
           </li>
-          <li class="nav__list-item">
-            <a class="text-regular nav__list-link" href="#">
-              О компании
-            </a>
+          <li class="events__list-item events__list-item--yoga">
+            <time class="text-bold events__list-time" datetime="2021-07-15">
+              15.07
+            </time>
+            <h3 class="text-bold-large events__list-title">
+              Йога, как стиль жизни
+            </h3>
+            <p class="text-regular events__list-text">
+              вебинар
+            </p>
+            <button class="text-small events__list-button">
+              Учавствовать
+            </button>
           </li>
         </ul>
-      </nav>
-      <ul class="header__list">
-       <li class="header__list-item">
-         <a class="header__list-link" href="#"></a>
-       </li>
-       <li class="header__list-item">
-        <a class="header__list-link" href="#"></a>
-      </li>
-      </ul>
-    </header>
-    <main class="container">
-      <section class="container__special-offer special-offer">
-        <h1 class="main-title special-offer__title">
-          Онлайн тренировки любой сложности
-        </h1>
-        <p class="title-regular special-offer__text">
-          &gt; 15 тренировок
-        </p>
-        <p class="text-regular special-offer__description">
-          в области спортивной физиологии и нутрициологии
-        </p>
-        <a class="text-small special-offer__link" href="#">
-          Узнать подробнее
-        </a>
       </section>
-      <div class="container__main-wrapper main-wrapper">
-        <section class="container__events events">
-          <h2 class="title-bold events__title">
-            Ближайшие события
+      <section class="container__schedule schedule">
+        <div class="schedule__wrapper">
+          <h2 class="title-bold schedule__title">
+            Расписание <span class="schedule__title-span">тренировок</span>
           </h2>
-          <ul class="events__list">
-            <li  class="events__list-item events__list-item--marathon">
-              <time  class="text-bold events__list-time" datetime="2021-06-29 - 2021-07-04">
-                29.06 - 4.07
-              </time>
-               <h3  class="text-bold-large events__list-title">
-                Марафон выносливости
-               </h3>
-               <p class="text-regular events__list-text">
-                марафон
-               </p>
-             </li>
-             <li  class="events__list-item events__list-item--coaching">
-              <time  class="text-bold events__list-time" datetime="2021-07-09">
-                9.07
-              </time>
-               <h3  class="text-bold-large events__list-title">
-                Как стать тренером?
-               </h3>
-               <p class="text-regular events__list-text">
-                вебинар
-               </p>
-             </li>
-             <li  class="events__list-item events__list-item--yoga">
-              <time  class="text-bold events__list-time" datetime="2021-07-15">
-                15.07
-              </time>
-               <h3  class="text-bold-large events__list-title">
-                Йога, как стиль жизни
-               </h3>
-               <p class="text-regular events__list-text">
-                вебинар
-               </p>
-             </li>
-          </ul>
-        </section>
-        <section class="container__schedule schedule">
-          <div class="schedule__wrapper">
-            <h2 class="title-bold schedule__title">
-              Расписание <span  class="schedule__title-span">тренировок</span>
-            </h2>
-            <time class="text-bold-large schedule__date" datetime="2021-06-22 - 2021-06-28">
-              22 - 28 июня
-            </time>
-          </div>
-          <div class="schedule__list">
+          <time class="text-bold-large schedule__date" datetime="2021-06-22 - 2021-06-28">
+            22 - 28 июня
+          </time>
+        </div>
+        <div class="schedule__list">
+          <div class="schedule__list-column">
             <div class="schedule__list-item">
               <time class="text-regula schedule__list-date" datetime="2021-06-22">
                 22 июня, 10:00
@@ -116,125 +162,181 @@
               <h3 class="text-bold schedule__list-title schedule__list-title--functional">
                 Функциональный тренинг
               </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
             </div>
             <div class="schedule__list-item">
               <time class="text-regula schedule__list-date" datetime="2021-06-24">
                 24 июня, 10:00
               </time>
               <h3 class="text-bold schedule__list-title schedule__list-title--sculpt">
-                Body sculpt              
+                Body sculpt
               </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
             </div>
+          </div>
+          <div class="schedule__list-column">
             <div class="schedule__list-item">
-              <time class="text-regula schedule__list-date" datetime="2021-06-26">
+              <time class="text-regula schedule__list-date" datetime="2021-03-02">
                 26 июня, 11:00
               </time>
               <h3 class="text-bold schedule__list-title schedule__list-title--lab">
-                L.A.B.              
+                L.A.B.
               </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
             </div>
             <div class="schedule__list-item">
               <time class="text-regula schedule__list-date" datetime="2021-06-23">
                 23 июня, 10:00
               </time>
               <h3 class="text-bold schedule__list-title schedule__list-title--power">
-                Силовой микс              
+                Силовой микс
               </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
             </div>
+          </div>
+          <div class="schedule__list-column">
             <div class="schedule__list-item">
               <time class="text-regula schedule__list-date" datetime="2021-06-25">
-                25 июня, 11:00              
+                25 июня, 11:00
               </time>
               <h3 class="text-bold schedule__list-title schedule__list-title--breath">
-                Дыхательные практики             
+                Дыхательные практики
               </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
             </div>
             <div class="schedule__list-item">
               <time class="text-regula schedule__list-date" datetime="2021-06-27">
-                27 июня, 10:00              
+                27 июня, 10:00
               </time>
               <h3 class="text-bold schedule__list-title schedule__list-title--warm-up">
-                Комплексная разминка             
+                Комплексная разминка
               </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="container__email-wrapper email-wrapper"> 
-        <section class="container__mailing mailing">
-          <h2 class="title-bold mailing__title">
-            Подпишитесь на рассылку
-          </h2>
-          <svg class="mailing__svg-circle" width="53" height="53" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d)">
-             <circle cx="50.5" cy="37.5" r="26.5" fill="#FBF138"/>
-            </g>
-          </svg>
-          <form class="mailing__form">
-          <input  class="text-regular mailing__form-input" id="email" type="text" placeholder="Ваш e-mail">
+        </div>
+      </section>
+    </div>
+    <div class="container__email-wrapper email-wrapper">
+      <section class="container__mailing mailing">
+        <h2 class="title-bold mailing__title">
+          Подпишитесь на рассылку
+        </h2>
+        <svg class="mailing__svg-circle" width="53" height="53" viewBox="0 0 101 101" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d)">
+            <circle cx="50.5" cy="37.5" r="26.5" fill="#FBF138" />
+          </g>
+        </svg>
+        <form class="mailing__form">
+          <input class="text-regular mailing__form-input" id="email" type="text" placeholder="Ваш e-mail">
           <button class="text-small mailing__form-button" type="submit">
             Подписаться
           </button>
           <p class="mailing__form-description">
-            <input  class="mailing__form-checkbox" type="checkbox" name="email" value="a1">
-            Согласен с обработкой 
+            <input class="mailing__form-checkbox" type="checkbox" name="email" value="a1">
+            Согласен с обработкой
             <a href="#" class="mailing__form-link">
-              персональных данных 
+              персональных данных
             </a>
           </p>
-          </form>
-        </section>
-      </div>
-      <div class="container__main-wrapper main-wrapper">
+        </form>
+      </section>
+    </div>
+    <div class="container__main-wrapper main-wrapper">
       <section class="container__company-info company-info">
-        <h2 class="company-info__title">
-          О компании
-        </h2>
-        <p class="company-info__description">
-          Наша компания является одной из немногих, кто предлагает
-           фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите,
+        <div class="company-info__wrapper">
+          <h2 class="title-bold company-info__title">
+            О компании
+          </h2>
+          <p class="text-regular company-info__description">
+            Наша компания является одной из немногих, кто предлагает
+            фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите,
             что мы проводим не только онлайн-тренировки.
-        </p>
-        <button class="company-info__button">
+          </p>
+        </div>
+        <button class="text-small company-info__button">
           Записаться
         </button>
-        <img class="company-info__img" src="./@1x/trainer.png" alt="Фото тренера">
+        <div class="company-info__img-wrapper">
+          <img class="company-info__img" src="./@1x/trainer.png" alt="Фото тренера">
+        </div>
         <ul class="company-info__list">
           <li class="company-info__list-item">
-            <h3 class="company-info__list-title">
-              Экономия времени 
+            <h3 class="text-bold company-info__list-title">
+              Экономия времени
             </h3>
-            <p class="company-info__list-text">
+            <p class="text-regular company-info__list-text">
               Не нужно тратить время на дорогу
             </p>
           </li>
           <li class="company-info__list-item">
-            <h3 class="company-info__list-title">
+            <h3 class="text-bold company-info__list-title">
               Индивидуальный подход
             </h3>
-            <p class="company-info__list-text">
+            <p class="text-regular company-info__list-text">
               Внимание тренера пренадлежит только вам
             </p>
           </li>
           <li class="company-info__list-item">
-            <h3 class="company-info__list-title">
+            <h3 class="text-bold company-info__list-title">
               Экономия денег
             </h3>
-            <p class="company-info__list-text">
+            <p class="text-regular company-info__list-text">
               Средняя цена одной тренировки - 700₽
             </p>
           </li>
           <li class="company-info__list-item">
-            <h3 class="company-info__list-title">
+            <h3 class="text-bold company-info__list-title">
               Опытный персонал
             </h3>
-            <p class="company-info__list-text">
+            <p class="text-regular company-info__list-text">
               Стаж работы у наших тренеров от 5 лет
             </p>
           </li>
         </ul>
       </section>
-      </div>
-    </main>
+    </div>
+  </main>
+  <script>
+    const scheduleTimes = document.querySelectorAll('.schedule__list-date');
+    scheduleTimes.forEach(item => {
+      const excersiceDate = new Date(item.attributes.datetime.value);
+
+      const today = new Date();
+
+      if (
+        excersiceDate.getMonth() === today.getMonth() &&
+        excersiceDate.getDate() === today.getDate()
+      ) {
+        item.parentElement.classList.add("schedule__list-item--active")
+      }
+
+
+    })
+  </script>
+
+  <style>
+    .schedule__list-item--active {
+      background-color: yellow;
+    }
+
+    .schedule__list-item--active .schedule__list-text {
+      display: flex;
+    }
+  </style>
 </body>
+
 </html>
