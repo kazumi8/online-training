@@ -63,7 +63,7 @@
       <a class="text-small special-offer__link" href="#">
         Узнать подробнее
       </a>
-      <a class="special-offer__arrow-link" href="#">
+      <a class="special-offer__arrow-link" href="#schedule">
         <svg class="special-offer__arrow-img" width="52" height="55" viewBox="0 0 52 55" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
@@ -144,7 +144,7 @@
           </li>
         </ul>
       </section>
-      <section class="container__schedule schedule">
+      <section id="schedule" class="container__schedule schedule">
         <div class="schedule__wrapper">
           <h2 class="title-bold schedule__title">
             Расписание <span class="schedule__title-span">тренировок</span>
@@ -167,30 +167,6 @@
               </p>
             </div>
             <div class="schedule__list-item">
-              <time class="text-regula schedule__list-date" datetime="2021-06-24">
-                24 июня, 10:00
-              </time>
-              <h3 class="text-bold schedule__list-title schedule__list-title--sculpt">
-                Body sculpt
-              </h3>
-              <p class="text-regular schedule__list-text">
-                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
-              </p>
-            </div>
-          </div>
-          <div class="schedule__list-column">
-            <div class="schedule__list-item">
-              <time class="text-regula schedule__list-date" datetime="2021-03-02">
-                26 июня, 11:00
-              </time>
-              <h3 class="text-bold schedule__list-title schedule__list-title--lab">
-                L.A.B.
-              </h3>
-              <p class="text-regular schedule__list-text">
-                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
-              </p>
-            </div>
-            <div class="schedule__list-item">
               <time class="text-regula schedule__list-date" datetime="2021-06-23">
                 23 июня, 10:00
               </time>
@@ -204,11 +180,35 @@
           </div>
           <div class="schedule__list-column">
             <div class="schedule__list-item">
-              <time class="text-regula schedule__list-date" datetime="2021-06-25">
+              <time class="text-regula schedule__list-date" datetime="2021-03-02">
+                24 июня, 10:00
+              </time>
+              <h3 class="text-bold schedule__list-title schedule__list-title--lab">
+                Body sculpt
+              </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
+            </div>
+            <div class="schedule__list-item">
+              <time class="text-regula schedule__list-date" datetime="2021-06-24">
                 25 июня, 11:00
               </time>
+              <h3 class="text-bold schedule__list-title schedule__list-title--sculpt">
+                Дыхательные практики 
+              </h3>
+              <p class="text-regular schedule__list-text">
+                Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+              </p>
+            </div>
+          </div>
+          <div class="schedule__list-column">
+            <div class="schedule__list-item">
+              <time class="text-regula schedule__list-date" datetime="2021-06-25">
+                26 июня, 11:00 
+              </time>
               <h3 class="text-bold schedule__list-title schedule__list-title--breath">
-                Дыхательные практики
+                L.A.B.
               </h3>
               <p class="text-regular schedule__list-text">
                 Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
@@ -234,7 +234,7 @@
         <h2 class="title-bold mailing__title">
           Подпишитесь на рассылку
         </h2>
-        <svg class="mailing__svg-circle" width="53" height="53" viewBox="0 0 101 101" fill="none"
+        <svg class="mailing__svg-circle" viewBox="0 0 101 101" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d)">
             <circle cx="50.5" cy="37.5" r="26.5" fill="#FBF138" />
@@ -246,7 +246,10 @@
             Подписаться
           </button>
           <p class="mailing__form-description">
-            <input class="mailing__form-checkbox" type="checkbox" name="email" value="a1">
+            <label class="mailing__form-label">
+              <input class="mailing__form-checkbox" type="checkbox" name="email" value="a1">
+              <span class="mailing__checkbox"></span>
+            </label>
             Согласен с обработкой
             <a href="#" class="mailing__form-link">
               персональных данных
@@ -310,6 +313,60 @@
       </section>
     </div>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__nav">
+        <a class="footer__link-logo" href="#">
+          <img class="footer__link-logo-img" src="./icons/logo.svg" alt="Логотип">
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="text-regular nav__list-link" href="#">
+                Мероприятия
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="text-regular nav__list-link" href="#">
+                Расписание
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="text-regular nav__list-link" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="text-small footer__mail" href="mailto:info@freefit.com">
+          info@freefit.com
+        </a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
+              <img class="footer__list-img" src="./icons/IN.svg" alt="Instagram">
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
+              <img class="footer__list-img" src="./icons/FB.svg" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__footnote">
+        <p class="footer__footnote-text">
+          &copy; 2020, Все права защищены
+        </p>
+        <p class="footer__footnote-text">
+          Сделано в рамках курса учебной платформы 
+          <a class="footer__footnote-link" href="https://frontendblok.com">
+            Frontend Blok
+          </a>
+        </p>
+      </div>
+  </div>
+  </footer>
   <script>
     const scheduleTimes = document.querySelectorAll('.schedule__list-date');
     scheduleTimes.forEach(item => {
@@ -338,5 +395,4 @@
     }
   </style>
 </body>
-
 </html>
