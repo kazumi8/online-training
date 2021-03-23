@@ -85,11 +85,13 @@ body {
     margin-right: 240px;
 }
 
+.header .nav {
+    margin-right: auto;
+}
 
 .nav {
     display: flex;
     justify-content: space-between;
-    margin-right: auto;
 }
 
 .nav__list {
@@ -144,11 +146,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    margin-bottom: 164px;
+    margin-bottom: 170px;
     padding-top: 250px;
     background-image: url("../@1x/Image\ 1\ screen.png");
     background-repeat: no-repeat;
-    background-position: 331px 13px;
+    background-position: 438px 18px;
     height: 615px;
     display: flex;
     flex-direction: column;
@@ -156,20 +158,25 @@ body {
 
 .special-offer__title {
     margin: 0;
+    margin-left: 92px;
     width: 675px;
     text-transform: uppercase;
 }
 
+.special-offer__text {
+    margin: 41px 0 19px 99px;
+}
+
 .special-offer__description {
     margin: 0;
-    margin-bottom: 40px;
-    padding-left: 80px;
+    margin-bottom: 35px;
+    padding-left: 183px;
     width: 297px;
 }
 
 .special-offer__link {
-    margin-left: 80px;
-    padding: 20px 30px 20px 30px;
+    margin-left: 185px;
+    padding: 20px 29px 20px 29px;
     height: 64px;
     width: 252px;
     color: #2B3541;
@@ -177,6 +184,7 @@ body {
     text-decoration: none;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
 .special-offer__link:hover {
@@ -534,6 +542,10 @@ body {
 
 /* block company-info */
 
+.container__company-info {
+    margin-bottom: 170px;
+}
+
 .company-info {
     display: grid;
     grid-template-columns: auto auto;
@@ -630,14 +642,30 @@ body {
 .footer__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 1140px;
+    min-width: 1140px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.footer__item {
+    display: flex;
+    margin: 50px 0 30px 0;
+    justify-content: space-between;
+}
+
+.footer__item .nav {
+    width: 100%;
+    margin-right: 200px;
+}
+
+.footer__item .nav__list {
+    width: 100%;
+    justify-content: space-between;
+}
+
 .footer__link-logo {
-    margin-right: 240px;
+    margin-right: 72px;
 }
 
 .footer__mail {
@@ -667,6 +695,7 @@ body {
 }
 
 .footer__footnote {
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
